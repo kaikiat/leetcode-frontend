@@ -3,7 +3,6 @@ import axios from 'axios';
 import { LeetcodeSolutionResponse, LeetcodeSolution } from '../types';
 import { LeetcodeSolutionDTO } from '../dto';
 
-
 const LEETCODE_API: string = process.env.REACT_APP_IS_PRODUCTION === 'false' ? 
     'http://127.0.0.1:8080/api' : 'https://rust.ntuasr.com/api';
 
