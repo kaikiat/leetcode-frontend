@@ -8,18 +8,6 @@ type LeetCodeProps = {
 }
 
 const Leetcode = ({solution} : LeetCodeProps) => {
-  // let codeString = `impl Solution {
-  //     pub fn can_make_arithmetic_progression(mut arr: Vec<i32>) -> bool {
-  //         let mut sorted_arr = arr.clone();
-  //         sorted_arr.sort_unstable();
-  //         let diff = sorted_arr[1] - sorted_arr[0];
-          
-  //         sorted_arr
-  //             .iter()
-  //             .zip(sorted_arr.iter().skip(1))
-  //             .all(|(&a, &b)| b - a == diff)
-  //     }
-  //   }`;
   return (
     <div className='items-center bg-white shadow-none rounded-lg overflow-hidden m-10 cursor-pointer'>
       <div>

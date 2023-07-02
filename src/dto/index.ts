@@ -27,8 +27,8 @@ export class LeetcodeSolutionDTO {
       let date = new Date(this.createdOn)
       return `${date.getUTCDate()} ${months[date.getUTCMonth()]} ${date.getUTCFullYear()}`
     }
-  }
+}
   
 export default {
-  LeetcodeSolutionDTO
+  LeetcodeSolutionDTO,
 }

@@ -1,14 +1,13 @@
-import Header from '../components/header';
-import Leetcode from '../components/leetcode';
+import Leetcode from '../components/Leetcode';
 import { useFetchSolutions } from '../services/api';
 
 const LeetcodePage = () => {
-  const { data, isLoading, error } = useFetchSolutions();
+  const { data, isLoading, error } = useFetchSolutions()  
   return (
     <div>
-    <Header/>
     <div>
-      {data.map((solution) => <Leetcode solution={solution}/>)}
+      {/* {data.map((solution, id) => <Leetcode solution={solution} key={id}/>)} */}
+      {[...data].reverse().map((solution, id) => <Leetcode solution={solution} key={id}/>)}
     </div>
     </div>
   );

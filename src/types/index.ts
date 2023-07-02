@@ -1,6 +1,9 @@
 export interface LeetcodeSolutionResponse {
   solutions: LeetcodeSolution[];
 }
+export interface CreateLeetcodeSolutionResponse {
+  solution: LeetcodeSolution;
+}
 export interface LeetcodeSolution{
   id: number
   title: string
