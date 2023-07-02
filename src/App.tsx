@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import Footer from './components/footer';
+// import Footer from './components/footer';
 import Header from './components/header';
 import LeetcodePage from './pages/Leetcode';
 import Page404 from './pages/Page404';
@@ -14,11 +14,10 @@ function App() {
     <Routes>
       <Route path='/' element={ <LeetcodePage/> } />
       <Route path='/leetcode' element={ <LeetcodePage/> } />
-      {/* <Route path='/dapp' element={ <WorkInProgressPage/> } /> */}
       <Route path='/new' element={ <CreateSolutionPage/> } />
       <Route path="*" element={<Page404 />} />
     </Routes>
-    <Footer/>
+    {/* <Footer/> */}
   </div>
   );
 }
