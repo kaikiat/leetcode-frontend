@@ -1,4 +1,4 @@
-import Leetcode from '../components/Leetcode';
+import Leetcode from '../components/leetcode';
 import { useFetchSolutions } from '../services/api';
 
 const LeetcodePage = () => {

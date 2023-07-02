@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './components/header';
+import Footer from './components/footer';
 import LeetcodePage from './pages/Leetcode';
-import WorkInProgressPage from './pages/Wip';
+// import WorkInProgressPage from './pages/Wip';
 import Page404 from './pages/Page404';
 import CreateSolutionPage from './pages/CreateSolution';
 
