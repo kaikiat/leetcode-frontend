@@ -1,4 +1,3 @@
-
 const Footer = () => {
   return (    
   <div className="py-6 black m-auto">
@@ -6,5 +5,5 @@ const Footer = () => {
   </div>
   );
 }
-  
+
 export default Footer;
