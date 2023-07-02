@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { postApi, LEETCODE_API } from '../services/api';
 import { useState } from 'react';
 
-const CreateSolutionPage = () => {
+const CreatePage = () => {
   const navigate = useNavigate();
   const [formState, setFormState] = useState({
     title: '',
@@ -59,4 +59,4 @@ const CreateSolutionPage = () => {
   );
 }
 
-export default CreateSolutionPage;
+export default CreatePage;

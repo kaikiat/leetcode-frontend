@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/header';
 import LeetcodePage from './pages/leetcode';
 import Page404 from './pages/page404';
-import CreateSolutionPage from './pages/createSolution';
+import CreatePage from './pages/create';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
     <Routes>
       <Route path='/' element={ <LeetcodePage/> } />
       <Route path='/leetcode' element={ <LeetcodePage/> } />
-      <Route path='/new' element={ <CreateSolutionPage/> } />
+      <Route path='/new' element={ <CreatePage/> } />
       <Route path="*" element={<Page404 />} />
     </Routes>
     {/* <Footer/> */}
