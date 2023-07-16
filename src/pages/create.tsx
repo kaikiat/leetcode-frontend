@@ -1,6 +1,33 @@
 import { useNavigate } from 'react-router-dom';
 import { postApi, LEETCODE_API } from '../services/api';
 import { useState } from 'react';
+import Select from "react-select";
+
+const tagOptions = [
+  { value: "rust", label: "Rust" },
+  { value: "dp", label: "dp" },
+  { value: "sliding_window", label: "Sliding Window" },
+  { value: "dfs", label: "DFS" },
+  { value: "bfs", label: "BFS" },
+  { value: "linked_list", label: "Linked List" },
+  { value: "two_pointers", label: "Two Pointers" },
+  { value: "hashmaps", label: "Hashmaps" },
+  { value: "arrays", label: "Arrays" },
+  { value: "binary_search", label: "Binary Search" },
+  { value: "topological_sort", label: "Topological Sort" },
+  { value: "sort", label: "Sort" },
+  { value: "heap", label: "Heap" },
+  { value: "union_find", label: "Union Find" },
+  { value: "backtracking", label: "Backtracking" },
+  { value: "tree", label: "Tree" },
+  { value: "graph", label: "Graph" },
+  { value: "trie", label: "Trie" },
+  { value: "recursion", label:"Recursion" },
+  { value: "simulation", label:"Simulation" },
+  { value: "greedy", label:"Greedy" },
+  { value: "stack", label:"Stack" },
+  { value: "sliding_window", label:"Sliding Window" },
+];
 
 const CreatePage = () => {
   const navigate = useNavigate();
@@ -38,6 +65,16 @@ const CreatePage = () => {
             placeholder="1. Two Sum: Two Pointer"
             onChange={handleChange}
             />
+        </div>
+        <div className="mb-6">
+          <Select
+            defaultValue={[tagOptions[0]]}
+            isMulti
+            name="tags"
+            options={tagOptions}
+            className="w-full bg-gray-50 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            classNamePrefix="select"
+          />
         </div>
         <div className="mb-6">
           <label htmlFor="code" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Code</label>

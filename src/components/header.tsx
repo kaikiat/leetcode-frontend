@@ -11,7 +11,7 @@ function Header() {
         </a>
       <div className='flex items-center mr-5'>
       <Link to='/new' className = {location.pathname === '/new' ? activeLink: inactiveLink} style = {{'margin': '0 15px'}}>
-        New
+        New ➕
       </Link>
       </div>
     </div>

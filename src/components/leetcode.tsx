@@ -9,7 +9,7 @@ type LeetCodeProps = {
 
 const Leetcode = ({solution} : LeetCodeProps) => {
   return (
-    <div className='items-center bg-white shadow-none rounded-lg overflow-hidden m-10 cursor-pointer'>
+    <div className='items-center bg-white shadow-none rounded-lg overflow-hidden m-3 cursor-pointer'>
       <div>
         <hr style = {{'color':'rgb(226 232 240)'}}/>
         <div className='text-xl text-black font-semibold pl-3 pt-3 pb-3 text-center'>
