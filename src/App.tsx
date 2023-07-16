@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-// import Footer from './components/footer';
+import Footer from './components/footer';
 import Header from './components/header';
 import LeetcodePage from './pages/leetcode';
 import Page404 from './pages/page404';
@@ -17,7 +17,7 @@ function App() {
       <Route path='/new' element={ <CreatePage/> } />
       <Route path="*" element={<Page404 />} />
     </Routes>
-    {/* <Footer/> */}
+    <Footer/>
   </div>
   );
 }
